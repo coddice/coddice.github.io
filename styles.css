@@ -1,20 +1,20 @@
 body {
-    background: #121212; /* Темный фон */
+    background: #121212;
     color: #fff;
-    font-family: 'Roboto', sans-serif; /* Более простой шрифт */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Занимаем всю высоту экрана */
+    min-height: 100vh;
 }
 
 .container {
-    background: #1e1e1e; /* Чуть светлее фон контейнера */
+    background: #1e1e1e;
     border-radius: 10px;
-    padding: 30px;
-    width: 90%; /* Занимаем большую часть ширины */
-    max-width: 500px; /* Ограничим максимальную ширину */
+    padding: 20px; /* Уменьшим общий отступ */
+    width: 95%; /* Займем еще больше ширины */
+    max-width: 600px; /* Увеличим максимальную ширину на больших экранах */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,30 +24,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Уменьшим отступ */
     width: 100%;
+    text-align: center; /* Центрируем лого и заголовок */
 }
 
 .logo {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #ff9800; /* Оранжевый акцент */
+    font-size: 2.5em; /* Немного уменьшим логотип */
+    margin-bottom: 5px; /* Уменьшим отступ */
+    color: #ff9800;
 }
 
 .casino-title {
-    font-size: 1.8em;
+    font-size: 1.5em; /* Немного уменьшим заголовок */
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Уменьшим отступ */
 }
 
 .balance {
-    font-size: 1.2em;
-    color: #8bc34a; /* Зеленый цвет баланса */
+    font-size: 1em; /* Уменьшим размер баланса */
+    color: #8bc34a;
 }
 
 .games {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Выстраиваем элементы в колонку */
     width: 100%;
 }
 
@@ -56,13 +57,13 @@ body {
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 15px;
+    padding: 15px; /* Уменьшим внутренний отступ */
+    margin-bottom: 10px; /* Уменьшим отступ между кнопками */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
+    flex-direction: row; /* Располагаем иконку и текст в ряд */
+    align-items: center; /* Выравниваем по вертикали */
+    justify-content: center; /* Центрируем содержимое */
+    font-size: 1em; /* Уменьшим размер шрифта */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -72,6 +73,27 @@ body {
 }
 
 .game-icon {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2em; /* Уменьшим размер иконки */
+    margin-right: 15px; /* Добавим отступ справа от иконки */
+}
+
+/* Медиа-запрос для экранов шириной до 500px */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    .logo {
+        font-size: 2em;
+    }
+    .casino-title {
+        font-size: 1.3em;
+    }
+    .game-card {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+    .game-icon {
+        font-size: 1.8em;
+        margin-right: 10px;
+    }
 }
