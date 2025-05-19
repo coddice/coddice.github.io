@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Угарное Казино</title>
+    <title>999 Casino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>🏀 Бросок в кольцо! 🏀</h1>
-        </header>
-
-        <main class="main-content">
-            <section id="profile" class="profile">
-                <h2>Профиль</h2>
-                <p>Баланс: <span id="balance">1000</span> у.е.</p>
-            </section>
-
-            <section id="game" class="game">
-                <h2>Сделай свою ставку!</h2>
-                <div class="bet-controls">
-                    <input type="number" id="betAmount" value="100" min="10">
-                    <button id="betOnHit">Попадет!</button>
-                    <button id="betOnMiss">Не попадет!</button>
-                    <p id="gameResult"></p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; Угарное Казино для своих</p>
-        </footer>
+        <div class="logo">
+            <span class="g">9</span><span class="p">9</span><span class="b">9</span>
+        </div>
+        <div class="casino-title">Casino</div>
+        <div class="grid">
+            <div>
+                <div class="label">Basketball</div>
+                <div class="card basketball-animated"><i class="fas fa-basketball-ball icon"></i></div>
+            </div>
+            <div>
+                <div class="label">Football</div>
+                <div class="card"><i class="fas fa-futbol icon"></i></div>
+            </div>
+            <div>
+                <div class="label">Something</div>
+                <div class="card"></div>
+            </div>
+            <div>
+                <div class="label">Something</div>
+                <div class="card"></div>
+            </div>
+            <div>
+                <div class="label">Something</div>
+                <div class="card"></div>
+            </div>
+            <div>
+                <div class="label">Something</div>
+                <div class="card"></div>
+            </div>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
