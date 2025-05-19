@@ -1,91 +1,77 @@
 body {
-    background: #181825; /* Новый фон */
-    color: #e0f2f7; /* Новый основной цвет текста */
-    font-family: 'Orbitron', Arial, sans-serif;
+    background: #121212; /* Темный фон */
+    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Более простой шрифт */
     margin: 0;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Занимаем всю высоту экрана */
+}
+
+.container {
+    background: #1e1e1e; /* Чуть светлее фон контейнера */
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%; /* Занимаем большую часть ширины */
+    max-width: 500px; /* Ограничим максимальную ширину */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container {
-    max-width: 400px;
-    margin: 30px auto;
-    border: 2px solid #64b5f6; /* Новая граница */
-    border-radius: 10px;
-    padding: 30px 10px 40px 10px;
-    background: #212121; /* Новый фон контейнера */
-}
-.logo {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.logo span {
-    font-size: 2.2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    /* Анимированный RGB цвет */
-    animation: rgb-glow 3s infinite alternate;
-}
-@keyframes rgb-glow {
-    0% { color: #ff0000; } /* Красный */
-    33% { color: #00ff00; } /* Зеленый */
-    66% { color: #0000ff; } /* Синий */
-    100% { color: #ff00ff; } /* Малиновый */
-}
-.casino-title { /* Исправил селектор */
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: #e0f2f7; /* Обновил цвет */
-}
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px 18px;
-    justify-items: center;
-}
-.card {
-    width: 110px;
-    height: 110px;
-    border: 3px solid #e0f2f7; /* Обновил цвет границы карточек */
-    border-radius: 20px;
+
+.header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff9800; /* Оранжевый акцент */
+}
+
+.casino-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.balance {
+    font-size: 1.2em;
+    color: #8bc34a; /* Зеленый цвет баланса */
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.game-card {
+    background: #2c2c2c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
-    background: rgba(255,255,255,0.05); /* Чуть посветлее фон карточек */
-    transition: box-shadow 0.2s;
-}
-.card:hover {
-    box-shadow: 0 0 16px #4db6ac; /* Новый цвет подсветки при наведении */
-}
-.label {
-    text-align: center;
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #e0f2f7; /* Обновил цвет */
-}
-.icon {
-    font-size: 2.7rem;
-}
-@media (max-width: 500px) {
-    .container { max-width: 98vw; padding: 10px 2vw 20px 2vw; }
-    .card { width: 90px; height: 90px; }
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Анимация вращения баскетбола */
-.card.basketball-animated:hover .icon {
-    animation: rotate-basketball 1s linear infinite;
+.game-card:hover {
+    background: #424242;
 }
 
-@keyframes rotate-basketball {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.game-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }

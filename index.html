@@ -3,45 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>999 Casino</title>
+    <title>Угарное Казино</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <span class="g">9</span><span class="p">9</span><span class="b">9</span>
-        </div>
-        <div class="casino-title">Casino</div>
-        <div class="grid">
-            <div>
-                <div class="label">Basketball</div>
-                <div class="card basketball-animated"><i class="fas fa-basketball-ball icon"></i></div>
-            </div>
-            <div>
-                <div class="label">Football</div>
-                <div class="card"><i class="fas fa-futbol icon"></i></div>
-            </div>
-            <div>
-                <div class="label">Something</div>
-                <div class="card"></div>
-            </div>
-            <div>
-                <div class="label">Something</div>
-                <div class="card"></div>
-            </div>
-            <div>
-                <div class="label">Something</div>
-                <div class="card"></div>
-            </div>
-            <div>
-                <div class="label">Something</div>
-                <div class="card"></div>
-            </div>
-        </div>
+        <header class="header">
+            <div class="logo">🎰</div>
+            <h1 class="casino-title">Угарное Казино</h1>
+            <div class="balance">Баланс: <span id="balance">999</span></div>
+        </header>
+
+        <main class="games">
+            <button class="game-card" id="basketball-button">
+                <i class="fas fa-basketball-ball game-icon"></i>
+                <span>Баскетбол</span>
+            </button>
+
+            <button class="game-card" id="football-button">
+                <i class="fas fa-futbol game-icon"></i>
+                <span>Футбол</span>
+            </button>
+
+            <button class="game-card" id="something1-button">
+                <i class="fas fa-question game-icon"></i>
+                <span>Что-то еще</span>
+            </button>
+
+            <button class="game-card" id="something2-button">
+                <i class="fas fa-question game-icon"></i>
+                <span>Что-то еще</span>
+            </button>
+        </main>
     </div>
 </body>
 </html>
